@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Santiago Fidalgo" />
+    <meta name="description" content="Pagina sobre la interfaz grafica del Lenguaje Rust" />
+    <meta name="keywords" content="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>Interfaz grafica de Rust</title>
+    <!-- Link de enlaces a la hoja de estilo -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Interfaz gráfica</h1>
+
+
+        <nav>
+            <h2>Contenido</h2>
+            <ul class="navigation">
+                <li><a title="Introducción" accesskey="I" href="index.html" tabindex=1>Inicio</a></li>
+                <li><a title="Historia" accesskey="H" href="Historia.html" tabindex=2>Historia</a></li>
+                <li><a title="Interfaz Grafica" accesskey="G" href="InterfazGrafica.html" tabindex=3>Interfaz
+                        Grafica</a></li>
+                <li><a title="Comparativa Rust" accesskey="C" href="ComparativaLenguajes.html" tabindex=4>Comparativas Rust</a></li>
+                <li><a title="Crecimiento Lenguaje Rust" accesskey="R" href="Crecimiento.html" tabindex=5>Crecimiento Lenguaje Rust</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>
+                <img alt="Interfaz gráfica del Lenguaje Rust" src="multimedia/interfazGrafica.png" width="700" height="400" />
+            </p>
+        
+            <h2>Interfaz gráfica</h2>
+            <p>
+                Rust permite la creación de interfaces gráficas mediante las APIs nativas de la plataforma anfitriona, esto gracias a que tiene características de un lenguaje de bajo nivel. Sin embargo, esta ruta de desarrollo puede llegar a generar dificultades en proyectos
+                que planten la admision de múltiples plataformas.
+            </p>
+            
+
+            <p>
+                Actualmente existen múltiples desarrollos para crear GUIs en Rust, algunos permiten la creación de la interfaz junto a Electron o haciendo uso de HTML, algunos otros, suministran bibliotecas nativas para el lenguaje, pero todavía se encuentran en un estado
+                inmaduro de desarrollo. Finalmente están los proyectos que enlazan bibliotecas bastante conocidas y con una mayor madurez en su desarrollo, como GTK o Qt, lo cuales permiten desarrollos multiplataforma
+
+            </p>
+            <p>
+                Genera confianza en tu código a través de las excelentes herramientas de Rust para hacer pruebas. cargo test es la solución unificada de Rust para hacer pruebas. Escribe las pruebas junto a tu código, o en archivos separados: una solución para todas las
+                necesidades de pruebas.
+            </p>
+            <p>
+                Cargo build crea binarios ajustados a cada plataforma. Con un solo comando tu código puede ser destinado a Windows, Linux, macOS, y la web. Todo es parte de una interfaz moderna, sin necesidad de archivos compilados específicos.
+            </p>
+        </section>
+        
+    
+    <h3>gtk-rs</h3>
+    <img alt="Gtk3" src="multimedia/gtk3.png" width="520" height="400" />
+    <p>
+        Fue desarrollada inicialmente por Peter Mattis, Spencer Kimball y Josh MacDonald34:3 para implementar la interfaz gráfica del programa de Manipulación de Imágenes de GNU (GIMP) como reemplazo del kit de herramientas Motif; en algún momento Peter Mattis
+        se desencantó con Motif y comenzó a escribir su propio kit de herramientas GUI llamado GIMP toolkit, reemplazando con éxito Motif para la versión 0.60 de GIMP. Finalmente, GTK fue reescrito para ser orientado a objetos y pasó a llamarse GTK+,
+        haciéndose uso de esto por primera vez en la versión 0.99 de GIMP. Siendo la primera versión estable de GTK lanzada el 14 de abril de 1998
+    </p>
+
+    <p>
+        Esta biblioteca contenía algunas rutinas de ayuda para resolver tareas básicas de programación, como el almacenamiento de diversos datos. Estos requieren mucho tiempo para el programador, especialmente cuando se trata del desarrollo repetido de programas.
+        Las primeras versiones de GTK incluían estructuras de datos para listas vinculadas, árboles binarios o cadenas "en crecimiento". Además, ya que fue reescrito para ser orientado a objetos, GTK permite usar este paradigma de programación dentro
+        del lenguaje C. Estas herramientas también resultaron útiles para programas sin una interfaz gráfica de usuario y por lo tanto más tarde se trasladaron a una biblioteca separada, llamada biblioteca GLib de funciones C . El sistema orientado a
+        objetos en la siguiente versión se relevo a la biblioteca GObject, los métodos de dibujo orientados al sistema a la biblioteca GDK (GTK + Kit de dibujo). Este último permite que GTK se ejecute de forma idéntica en plataformas en Windows, X Window
+        System, macOS , entre otros.
+    </p>
+    <p>
+        Es una implementación de las bibliotecas de GTK 3 para el uso junto al lenguaje Rust. Para ello, crea funciones de Rust superpuestas a las funciones de las bibliotecas de GTK en C, haciendo uso de Foreign Function Interface que ofrece Rust.
+
+    </p>
+
+    <h3>conrod</h3>
+    <p>
+        Biblioteca de bajo nivel que hace uso de OpenGL o Vulkan.
+    </p>
+    <video src="multimedia/trailer.mp4" controls width="400" height="230"></video>
+    </main>
+    <footer>
+        <h3>Más información</h3>
+        <a href="https://www.rust-lang.org/es">Pagina de rust</a><br>
+    </footer>
+</body>
+
+</html>

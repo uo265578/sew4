@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Santiago Fidalgo" />
+    <meta name="description" content="Pagina sobre la interfaz grafica del Lenguaje Rust" />
+    <meta name="keywords" content="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>Lenguaje Rust</title>
+    <!-- Link de enlaces a la hoja de estilo -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Comparativas lenguajes</h1>
+
+        <nav>
+            <h2>Contenido</h2>
+            <ul class="navigation">
+                <li><a title="Introducción" accesskey="I" href="index.html" tabindex=1>Inicio</a></li>
+                <li><a title="Historia" accesskey="H" href="Historia.html" tabindex=2>Historia</a></li>
+                <li><a title="Interfaz Grafica" accesskey="G" href="InterfazGrafica.html" tabindex=3>Interfaz
+                        Grafica</a></li>
+                <li><a title="Comparativa Rust" accesskey="C" href="ComparativaLenguajes.html" tabindex=4>Comparativas Rust</a></li>
+                <li><a title="Crecimiento Lenguaje Rust" accesskey="R" href="Crecimiento.html" tabindex=5>Crecimiento Lenguaje Rust</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section>
+            <h2>Comparativa lenguajes</h2>
+            <p>
+                Como sabemos cada lenguaje de programación está mejor capacitado para realizar unas actividades u otras, aqui se muestra una comparativa.
+            </p>
+
+            <table>
+                <tr>	 
+                    <th scope="row" id="nombre">Nombre</th>
+                    <th scope="col" id="cumple">Cumple adaptabilidad </th>
+                    <th scope="col" id="fechaIn">Fecha inicio</th>
+                    <th scope="col" id="fechaFin">Fecha fin </th> 
+                </tr>
+                <tr>
+                    <th scope="row" id="rust" headers = "nombre">Rust</th> 
+                    <td headers = "cumple">Sí</td>
+                    <td headers = "fechaIn">2006</td>
+                    <td headers = "fechaFin">2020</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="java" headers = "nombre">Java</th>
+                    <td headers = "cumple">Sí</td>
+                    <td headers = "fechaIn">1991</td>
+                    <td headers = "fechaFin">2015</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="c" headers = "nombre">C++</th>
+                    <td headers = "cumple">No</td>
+                    <td headers = "fechaIn">1980</td>
+                    <td headers = "fechaFin">2008</td>
+                </tr>
+                <tr>
+                    <th scope="row" id="python" headers = "nombre">Python</th>
+                    <td headers = "cumple">No</td>
+                    <td headers = "fechaIn">1991</td>
+                    <td headers = "fechaFin">2003</td>
+                </tr>
+            </table>
+
+        </section>
+    </main>
+    <footer>
+        <h3>Más información</h3>
+        <a href="https://www.rust-lang.org/es">Pagina de rust</a><br>
+    </footer>
+</body>
+
+</html>
